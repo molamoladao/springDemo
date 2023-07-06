@@ -27,6 +27,7 @@ public class CommonController {
         System.out.println("你输入的密码为："+password);
 
         String name=commonService.login(sno,password);
+        System.out.println("学生的姓名为："+name);
 
         session.setAttribute("name",name);
 
